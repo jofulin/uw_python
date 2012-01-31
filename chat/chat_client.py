@@ -26,7 +26,7 @@ s.connect((host,port))
 
 input = [s, sys.stdin]
 
-# print ">  "
+
 while True :
     inputready,outputready,exceptready = select.select(input,[],[],timeout)
     for msg in inputready:
